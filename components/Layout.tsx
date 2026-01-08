@@ -39,11 +39,11 @@ const Layout: React.FC<Props> = ({ currentPage, setPage, children }) => {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <button onClick={() => setPage('HOME')} className="flex items-center gap-3 group text-left">
             <div className="w-11 h-11 bg-brand-600 rounded-2xl flex items-center justify-center group-hover:scale-105 transition-transform shadow-2xl shadow-brand-500/30 rotate-3">
-              <span className="text-white font-black text-xl">S</span>
+              <span className="text-white font-black text-xl">RM</span>
             </div>
             <div className="flex flex-col leading-none">
-                <span className="text-lg font-black tracking-tighter dark:text-white uppercase">ApexCareer<span className="text-brand-600">AI</span></span>
-                <span className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-400">By Shishira B J</span>
+                <span className="text-lg font-black tracking-tighter dark:text-white uppercase">Resume<span className="text-brand-600">Match</span> AI</span>
+                <span className="text-[8px] font-black uppercase tracking-[0.3em] text-slate-400">Intelligent Analysis</span>
             </div>
           </button>
           
@@ -52,8 +52,8 @@ const Layout: React.FC<Props> = ({ currentPage, setPage, children }) => {
               { id: 'HOME', label: 'Home' },
               { id: 'ANALYZE', label: 'Match Engine' },
               { id: 'ATS', label: 'ATS Audit' },
-              { id: 'INTERVIEW', label: 'Simulate' },
-              { id: 'HISTORY', label: 'Archive' }
+              { id: 'INTERVIEW', label: 'Practice' },
+              { id: 'HISTORY', label: 'History' }
             ].map((p) => (
               <button 
                 key={p.id}
@@ -80,13 +80,6 @@ const Layout: React.FC<Props> = ({ currentPage, setPage, children }) => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
               )}
             </button>
-            <a 
-              href="#" 
-              target="_blank" 
-              className="bg-slate-900 dark:bg-white dark:text-slate-950 text-white px-7 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:opacity-90 transition-all shadow-xl"
-            >
-              System Docs
-            </a>
           </div>
         </div>
       </header>
@@ -98,13 +91,13 @@ const Layout: React.FC<Props> = ({ currentPage, setPage, children }) => {
       <footer className="border-t border-slate-200 dark:border-slate-800 py-16 bg-white dark:bg-slate-950">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
-            <span className="font-black dark:text-white uppercase tracking-tighter text-lg">Developed by Shishira B J</span>
-            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none">BE Computer Science & Engineering | Portfolio Project 2024</span>
+            <span className="font-black dark:text-white uppercase tracking-tighter text-lg">Resume Match AI</span>
+            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest leading-none">© 2024 AI-Powered Career Tools</span>
           </div>
           <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            <a href="#" className="hover:text-brand-600 transition-colors">Technical Blueprint</a>
-            <a href="#" className="hover:text-brand-600 transition-colors">Source Repo</a>
-            <a href="#" className="hover:text-brand-600 transition-colors">LinkedIn Profile</a>
+            <a href="#" className="hover:text-brand-600 transition-colors">Documentation</a>
+            <a href="#" className="hover:text-brand-600 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-brand-600 transition-colors">Contact</a>
           </div>
         </div>
       </footer>

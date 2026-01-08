@@ -100,40 +100,39 @@ const App: React.FC = () => {
             <div className="text-center mb-32">
                 <div className="inline-flex items-center gap-2.5 glass-card px-5 py-2 rounded-full text-brand-700 dark:text-brand-400 text-[10px] font-black uppercase tracking-[0.2em] mb-12 shadow-sm animate-float">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
-                Developed by Shishira B J
+                AI-Powered Career Intelligence
                 </div>
                 <h1 className="text-8xl md:text-9xl font-black tracking-tighter leading-[0.8] mb-12 dark:text-white">
-                Career Intelligence<br/>
-                <span className="text-brand-600 bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-indigo-500 to-rose-600">at elite speed.</span>
+                Resume Match<br/>
+                <span className="text-brand-600 bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-indigo-500 to-rose-600">for elite careers.</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-20 font-medium leading-relaxed">
-                A hyper-modern suite for professional benchmarking, leveraging NLP Match Engines, ATS Audits, and Real-time Multi-modal Simulators.
+                Smart resume analysis, real-time match scoring, and AI-powered interview practice in one powerful suite.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-8 items-center">
                 <button onClick={() => setPage('ANALYZE')} className="px-14 py-6 bg-brand-600 text-white rounded-[2rem] font-black text-lg hover:bg-brand-700 shadow-2xl shadow-brand-500/30 transition-all transform active:scale-95">
-                    Launch Match Engine
+                    Match Engine
                 </button>
                 <button onClick={() => setPage('INTERVIEW')} className="glass-card px-14 py-6 rounded-[2rem] font-black text-lg hover:bg-white dark:hover:bg-slate-800 transition-all border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white">
-                    Live Simulation
+                    Start Interview
                 </button>
                 </div>
             </div>
 
-            {/* Technical Architecture Section for Interviews */}
             <div className="mt-40 pt-40 border-t border-slate-200/50 dark:border-slate-800/50">
                <div className="flex flex-col lg:flex-row gap-20 items-start">
                   <div className="lg:w-1/3 space-y-8">
                      <div className="p-1 bg-brand-600 w-12 h-1 rounded-full"></div>
-                     <h2 className="text-4xl md:text-5xl font-black dark:text-white leading-none tracking-tighter">System<br/>Architecture</h2>
+                     <h2 className="text-4xl md:text-5xl font-black dark:text-white leading-none tracking-tighter">System<br/>Intelligence</h2>
                      <p className="text-slate-500 font-medium leading-relaxed">
-                        This platform demonstrates proficiency in NLP processing, real-time audio engineering, and robust full-stack system architecture.
+                        Our platform uses advanced NLP and real-time audio processing to provide a seamless career preparation experience.
                      </p>
                      <div className="grid grid-cols-1 gap-3">
                         {[
-                          { l: 'NLP Processing', d: 'Vector-based TF-IDF matching' },
-                          { l: 'System Design', d: 'Modular microservice structure' },
-                          { l: 'Voice Pipeline', d: 'Low-latency PCM audio streaming' },
-                          { l: 'Data Lifecycle', d: 'Client-side local persistence' }
+                          { l: 'NLP Match Engine', d: 'Vector-based semantic analysis' },
+                          { l: 'ATS Audit', d: 'Industry-standard compatibility checks' },
+                          { l: 'Live Simulation', d: 'Low-latency voice interview practice' },
+                          { l: 'Private Data', d: 'Client-side processing and storage' }
                         ].map((t, i) => (
                           <div key={i} className="glass-card p-5 rounded-2xl border border-slate-200/50 dark:border-slate-800/50">
                              <span className="block text-[10px] font-black uppercase tracking-widest text-brand-600 mb-1">{t.l}</span>
@@ -145,30 +144,30 @@ const App: React.FC = () => {
                   <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
                      <div className="glass-card p-12 rounded-[3.5rem] hover:border-brand-500/30 transition-all group">
                         <div className="w-10 h-10 bg-indigo-50 dark:bg-indigo-900/20 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:rotate-12 transition-transform">📊</div>
-                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Logic: TF-IDF Engine</h4>
+                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Match Logic</h4>
                         <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                           Developed a custom NLP engine to calculate term frequencies and normalize vectors. The match score is derived from the Cosine Similarity between the candidate profile and role requirements.
+                           Calculate term frequencies and normalize vectors to derive a high-accuracy match score via Cosine Similarity.
                         </p>
                      </div>
                      <div className="glass-card p-12 rounded-[3.5rem] hover:border-rose-500/30 transition-all group">
                         <div className="w-10 h-10 bg-rose-50 dark:bg-rose-900/20 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:rotate-12 transition-transform">🎙️</div>
-                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Stream: Audio Pipeline</h4>
+                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Voice Engine</h4>
                         <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                           Engineered a high-performance audio pipeline using the Web Audio API. Captures 16kHz PCM fragments, performs Base64 encoding, and handles full-duplex communication for the simulator.
+                           Full-duplex audio pipeline utilizing the Web Audio API for a low-latency, conversational interview simulation.
                         </p>
                      </div>
                      <div className="glass-card p-12 rounded-[3.5rem] hover:border-emerald-500/30 transition-all group">
                         <div className="w-10 h-10 bg-emerald-50 dark:bg-emerald-900/20 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:rotate-12 transition-transform">🛡️</div>
-                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Audit: ATS Intelligence</h4>
+                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">ATS Audit</h4>
                         <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                           Built a heuristic audit system that analyzes document parseability, keyword signatures, and section hierarchy to ensure compatibility with modern recruitment platforms.
+                           Analyze document structure and formatting to ensure your profile is optimized for modern applicant tracking systems.
                         </p>
                      </div>
                      <div className="glass-card p-12 rounded-[3.5rem] hover:border-brand-500/30 transition-all group">
                         <div className="w-10 h-10 bg-brand-50 dark:bg-brand-900/20 rounded-xl flex items-center justify-center text-xl mb-6 group-hover:rotate-12 transition-transform">📂</div>
-                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Parse: Client-Side Extraction</h4>
+                        <h4 className="font-black text-slate-900 dark:text-white mb-4 uppercase text-sm tracking-widest">Local Parse</h4>
                         <p className="text-sm text-slate-500 leading-relaxed font-medium">
-                           Integrated `pdf.js` for secure, localized PDF text extraction. This approach eliminates server-side privacy risks while maintaining support for complex resume layouts.
+                           Documents are parsed directly in your browser, ensuring maximum privacy and fast processing times without server-side storage.
                         </p>
                      </div>
                   </div>
@@ -263,10 +262,10 @@ const App: React.FC = () => {
       case 'HISTORY':
         return (
           <div className="max-w-5xl mx-auto px-4 py-20 page-transition-enter">
-            <h2 className="text-6xl font-black dark:text-white mb-20 tracking-tighter leading-none">Intelligence Archive</h2>
+            <h2 className="text-6xl font-black dark:text-white mb-20 tracking-tighter leading-none">History</h2>
             {history.length === 0 ? (
               <div className="glass-card p-24 rounded-[4rem] text-center border-dashed border-2 border-slate-200 dark:border-slate-800">
-                <p className="text-slate-400 font-black text-xl mb-12 uppercase tracking-widest">History is Clear</p>
+                <p className="text-slate-400 font-black text-xl mb-12 uppercase tracking-widest">No previous analysis</p>
                 <button onClick={() => setPage('ANALYZE')} className="bg-brand-600 text-white px-12 py-5 rounded-[2rem] font-black text-lg shadow-xl">Begin Analysis</button>
               </div>
             ) : (
